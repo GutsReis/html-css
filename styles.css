@@ -1,0 +1,36 @@
+.layout {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+.mosaic-section {
+    display: grid;
+    grid-template-areas: 'mosaic-left' 'mosaic-top-right' 'mosaic-bottom-right';
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+main {
+    background: #b2ee94;
+}
+
+.right {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+.top-section {
+    background: #f6c356;
+}
+
+.mosaic-left {
+    grid-area: mosaic-left;
+    background: #FF8983;
+    padding: 1rem;
+    white-space: nowrap;
+}
